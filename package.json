@@ -2,6 +2,7 @@
     "name": "uktc-schedule",
     "version": "0.0.1",
     "scripts": {
+	"start:ios": "ionic cordova run ios --livereload --address 192.168.0.107",
         "start:android": "ionic cordova run android --livereload --address 192.168.0.107",
         "serve": "ionic serve -l --address 192.168.0.107",
         "clean": "ionic-app-scripts clean",
