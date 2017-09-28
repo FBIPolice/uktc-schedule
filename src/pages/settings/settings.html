@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Настройки</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      General
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Курс по подразбиране</ion-label>
+      <ion-select [(ngModel)]="defaultGrade" okText="Select" interface="popover">
+        <ion-option value="">Изключи</ion-option>
+        <ion-option *ngFor="let grade of grades" value={{grade}}>{{grade}}</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <button color="dark" ion-button style="float: right" (click)="_onSaveClick()">Save</button>
+</ion-content>

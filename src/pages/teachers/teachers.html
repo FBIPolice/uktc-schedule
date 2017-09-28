@@ -1,0 +1,18 @@
+<ion-header>
+
+  <global-navbar></global-navbar>
+
+  <ion-navbar>
+    <ion-title>
+      Учители
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list margin-top no-lines *ngFor="let teacher of teachers">
+    <button (click)="showScheduleModal(teacher, 'teachers')" ion-item>{{ teacher }}</button>
+  </ion-list>
+</ion-content>

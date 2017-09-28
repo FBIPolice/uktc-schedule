@@ -1,0 +1,16 @@
+<ion-header>
+
+  <global-navbar></global-navbar>
+
+  <ion-navbar>
+    <ion-title>
+      Курсове
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list margin-top no-lines *ngFor="let grade of grades">
+    <button (click)="showScheduleModal(grade, 'grades')" ion-item>{{ grade }}</button>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-header>
+
+  <global-navbar></global-navbar>
+
+  <ion-navbar>
+    <ion-title>
+      Стаи
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list margin-top no-lines *ngFor="let room of rooms">
+    <button (click)="showScheduleModal(room, 'rooms')" ion-item>{{ room }}</button>
+  </ion-list>
+</ion-content>

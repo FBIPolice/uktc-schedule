@@ -1,0 +1,19 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title align="center">{{image}}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="closeModal()">
+        <ion-icon name="md-close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-scroll scrollX="true" scrollY="true" style="height: 100%;">
+    <img id="grade-img" src={{image_url}} [style.marginLeft]="leftMargin" />
+  </ion-scroll>
+</ion-content>
